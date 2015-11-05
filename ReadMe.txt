@@ -29,7 +29,15 @@ StatičkiČlanovi
 Primjer ponašanja statičkog polja i dohvaćanja statičkog člana iz klase i
 izvan klase.
 
-Konstruktori
+KonstruktorKlase
+-----------
+Primjer definicije i poziva konstruktora klase.
+
+KonstruktorStrukture
+-----------
+Primjer definicije i poziva konstruktora strukture.
+
+DelegiranjeKonstruktora
 ------------
 Primjer poziva konstruktora bazne klase pomoću ključne riječi base i 
 poziva drugog ("delegiranja") konstruktora iste klase pomoću ključne riječi this.
@@ -41,6 +49,10 @@ i nevirtualnim metodama. Kreira se niz objekata pripadajućih tipova i u
 petlji se pozivaju metode. Za virtualne metode će biti uvijek pozvana
 metoda iz "najizvedenijeg" tipa! Za nevirtualne metode će uvijek biti
 pozvana metoda iz "pretvorenog" (tj. baznog) tipa.
+
+VirtualneMetodeKonstruktor
+--------------------------
+Primjer kako se iz konstruktora mogu pozivati virtualne metode.
 
 Destruktor
 ----------
