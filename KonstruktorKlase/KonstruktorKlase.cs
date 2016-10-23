@@ -1,26 +1,44 @@
 ﻿using System;
 
-namespace Vsite.CSharp
+namespace Vsite.CSharp.KonstruktorKlase
 {
-    class MojaKlasa
+    public enum Spol
     {
-        public int a;
-        public string s;
+        Muški,
+        Ženski
+    }
+
+    public class Osoba
+    {
+        //public Osoba()
+        //{
+
+        //}
+
+        //public Osoba(string ime, string prezime, DateTime datumRođenja, Spol spol)
+        //{
+
+        //}
+
+        public readonly string Ime;
+        public readonly string Prezime;
+        public readonly DateTime DatumRođenja;
+        public readonly Spol Spol;
     }
 
     class KonstruktorKlase
     {
         static void Main(string[] args)
         {
-            // TODO: Stvoriti objekt klase MojaKlasa i ispisati vrijednosti članova
+            // TODO: Stvoriti objekt klase Osoba i ispisati vrijednosti članova
+            
+
+
+            // TODO: U klasu Osoba dodati prazan konstruktor koji inicijalizira članove objekta na neku vrijednost te ponoviti gornji postupak
 
 
 
-            // TODO: U klasu MojaKlasa dodati prazan konstruktor koji inicijalizira svoje članove na neku vrijednost te ponoviti gornji postupak
-
-
-
-            // TODO: U klasi MojaKlasa promijeniti prazan konstruktor tako da prima dva argumenta kojima se inicijaliziraju članovi te ponoviti gornji postupak
+            // TODO: U klasi Osoba promijeniti prazan konstruktor tako da prima 4 argumenta (ime, prezime, datumRođenja i spol) kojima se inicijaliziraju članovi objekta te ponoviti gornji postupak
 
 
             Console.ReadKey();

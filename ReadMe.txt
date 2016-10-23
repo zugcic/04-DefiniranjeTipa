@@ -1,6 +1,11 @@
 DefiniranjeTipa
 ===============
 
+KorištenjeTipa
+--------------
+Primjer stvaranja instanci i korištenja objekta i njegovih članova.
+
+
 DefinicijaTipa
 --------------
 Primjer definicije klase i strukture.
