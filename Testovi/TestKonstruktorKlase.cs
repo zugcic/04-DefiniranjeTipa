@@ -1,20 +1,19 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp.KonstruktorKlase;
+using Vsite.CSharp;
 
 namespace Vsite.CSharp.Testovi
 {
     [TestClass]
-    public class TestKonstruktorKlase
+    public class TestKonstruktorKlase : ConsoleTest
     {
         [TestMethod]
         public void KonstruktorKlase_KonstruktorSArgumentimaInicijaliziraOsobu()
         {
-            Osoba o = new Osoba("Nikola", "Tesla", new DateTime(1856, 7, 10), Spol.Muški);
-            Assert.AreEqual("Nikola", o.Ime);
-            Assert.AreEqual("Tesla", o.Prezime);
-            Assert.AreEqual(new DateTime(1856, 7, 10), o.DatumRođenja);
-            Assert.AreEqual(Spol.Muški, o.Spol);
+            KonstruktorKlase.StvoriObjektZadanimKonstruktorom("Nikola", "Tesla", new DateTime(1856, 7, 10));
+            Assert.AreEqual("Nikola", cw.GetString());
+            Assert.AreEqual("Tesla", cw.GetString());
+            Assert.AreEqual(new DateTime(1856, 7, 10), (DateTime)cw.GetObject());
         }
     }
 }

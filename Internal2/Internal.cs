@@ -2,26 +2,41 @@
 
 namespace Vsite.CSharp
 {
-    class Internal
+    public class Internal
     {
         static void Main(string[] args)
         {
-            // TODO: Prevedite kod i popravite pogreške koje prevoditelj prijavljuje
+            IspišiIzvedenuIzJavne();
 
-            IzvedenaIzJavneBazne izvedenaIzJavne = new IzvedenaIzJavneBazne();
-            izvedenaIzJavne.IspišiMe();
+            IspišiIzvedenuIzBazne();
 
-            IzvedenaIzBazne izvedenaIzBazne = new IzvedenaIzBazne();
-            izvedenaIzBazne.IspišiMe();
-
-
-            // TODO: U klasi IzvedenaIzInterneBazneLokalne treba na neki način omogućiti poziv metode IspišiMe iz klase InternaBaznaLokalna ali bez promjene koda klase InternaBaznaLokalna!
-
-            IzvedenaIzInterneBazne izvedenaIzInterne = new IzvedenaIzInterneBazne();
-            izvedenaIzInterne.IspišiMe();
+            IspišiIzvedenuIzInterneBazne();
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
+        }
+
+        public static void IspišiIzvedenuIzJavne()
+        {
+            // TODO: Definiciju klase IzvedenaIzJavneBazne promijenite tako da je ona izvedena iz klase JavnaBazna.
+            // TODO: Otkomentirajte drugu naredbu, prevedite kod i provjerite radi li poziv ispravno.
+            IzvedenaIzJavneBazne izvedenaIzJavne = new IzvedenaIzJavneBazne();
+            //izvedenaIzJavne.IspišiMe();
+        }
+
+        public static void IspišiIzvedenuIzBazne()
+        {
+            // TODO: Definiciju klase IzvedenaIzBazne promijenite tako da je ona izvedena iz klase Bazna. Prevedite kod i popravite pogreške koje prevoditelj prijavljuje.
+            // TODO: Otkomentirajte drugu naredbu, prevedite kod i provjerite radi li poziv ispravno.
+            IzvedenaIzBazne izvedenaIzBazne = new IzvedenaIzBazne();
+            //izvedenaIzBazne.IspišiMe();
+        }
+
+        public static void IspišiIzvedenuIzInterneBazne()
+        {
+            // TODO: U klasi IzvedenaIzInterneBazneLokalne treba na neki način omogućiti poziv metode IspišiMe iz klase InternaBaznaLokalna ali bez promjene koda klase InternaBaznaLokalna!
+            IzvedenaIzInterneBazne izvedenaIzInterne = new IzvedenaIzInterneBazne();
+            izvedenaIzInterne.IspišiMe();
         }
     }
 }

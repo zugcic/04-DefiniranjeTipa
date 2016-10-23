@@ -3,40 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Vsite.CSharp.ClassStruct
+namespace Vsite.CSharp
 {
     // TODO: Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public
-    public class MojaKlasa
+    class MojaKlasa
     {
 
     }
 
     // TODO: Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public
-    public struct MojaStruktura
+    struct MojaStruktura
     {
 
 
     }
 
-    class ClassStruct
+    public class ClassStruct
     {
-        static void Main(string[] args)
+        public static void IspišiKlase()
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO: Pozvati metodu IspišiČlan za obje instance
-
-            mk2.broj = 2;
-            // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat
+            // TODO: Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
 
 
+            // TODO: Otkomentirati donju naredbu.
+            //mk2.broj = 2;
+            // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+
+
+        }
+
+        public static void IspišiStrukture()
+        {
             MojaStruktura ms1 = new MojaStruktura();
             MojaStruktura ms2 = ms1;
             // TODO: Pozvati metodu IspišiČlan za obje instance
 
-            ms2.tekst = "MyStruct";
-            // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat
 
+            // TODO: Otkomentirati donju naredbu.
+            //ms2.tekst = "MyStruct";
+            // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+
+
+        }
+
+        static void Main(string[] args)
+        {
+            IspišiKlase();
+            IspišiStrukture();
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();

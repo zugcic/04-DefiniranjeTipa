@@ -10,16 +10,14 @@ namespace Vsite.CSharp.Testovi
         [TestMethod]
         public void Internal_IzvedenaIzJavneBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
-            IzvedenaIzJavneBazne izvedanaIzJavne = new IzvedenaIzJavneBazne();
-            izvedanaIzJavne.IspišiMe();
+            Internal.IspišiIzvedenuIzJavne();
             Assert.AreEqual("JavnaBazna", cw.GetString());
         }
 
         [TestMethod]
         public void Internal_IzvedenaIzBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
-            IzvedenaIzBazne izvedanaIzBazne = new IzvedenaIzBazne();
-            izvedanaIzBazne.IspišiMe();
+            Internal.IspišiIzvedenuIzBazne();
             Assert.AreEqual("???Bazna", cw.GetString());
         }
 

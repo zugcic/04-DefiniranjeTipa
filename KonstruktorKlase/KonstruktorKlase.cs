@@ -1,46 +1,42 @@
 ﻿using System;
 
-namespace Vsite.CSharp.KonstruktorKlase
+namespace Vsite.CSharp
 {
-    public enum Spol
-    {
-        Muški,
-        Ženski
-    }
-
     public class Osoba
     {
-        //public Osoba()
-        //{
-
-        //}
-
-        //public Osoba(string ime, string prezime, DateTime datumRođenja, Spol spol)
-        //{
-
-        //}
-
         public readonly string Ime;
         public readonly string Prezime;
         public readonly DateTime DatumRođenja;
-        public readonly Spol Spol;
     }
 
-    class KonstruktorKlase
+    public class KonstruktorKlase
     {
+        public static void StvoriObjektPodrazumijevanimKonstruktorom()
+        {
+            // TODO: Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+
+
+            // TODO: U klasu Osoba dodati prazni konstruktor koji inicijalizira članove objekta na neku vrijednost, ponovno pokrenuti program i provjeriti ispis.
+
+
+        }
+
+        public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
+        {
+            // TODO: U klasi Osoba promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
+            // TODO: Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+
+
+        }
+
+
         static void Main(string[] args)
         {
-            // TODO: Stvoriti objekt klase Osoba i ispisati vrijednosti članova
-            
+            StvoriObjektPodrazumijevanimKonstruktorom();
 
+            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", new DateTime(1971, 27, 4));
 
-            // TODO: U klasu Osoba dodati prazan konstruktor koji inicijalizira članove objekta na neku vrijednost te ponoviti gornji postupak
-
-
-
-            // TODO: U klasi Osoba promijeniti prazan konstruktor tako da prima 4 argumenta (ime, prezime, datumRođenja i spol) kojima se inicijaliziraju članovi objekta te ponoviti gornji postupak
-
-
+            Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
     }

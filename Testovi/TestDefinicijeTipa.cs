@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp.DefinicijaTipa;
+using Vsite.CSharp;
 
 namespace Vsite.CSharp.Testovi
 {
@@ -10,15 +10,15 @@ namespace Vsite.CSharp.Testovi
         [TestMethod]
         public void DefinicijaTipa_MojaKlasaIspišiČlanIspisuje5()
         {
-            MojaKlasa mk = new MojaKlasa();
-            Assert.AreEqual(5, mk.IspišiČlan());
+            DefinicijaTipa.IspišiČlanKlase();
+            Assert.AreEqual(5, cw.GetInt());
         }
 
         [TestMethod]
         public void DefinicijaTipa_MojaStrukturaIspišiČlanIspisuje5()
         {
-            MojaStruktura ms = new MojaStruktura();
-            Assert.AreEqual("MojaStruktura", ms.IspišiČlan());
+            DefinicijaTipa.IspišiČlanStrukture();
+            Assert.AreEqual("MojaStruktura", cw.GetString());
         }
     }
 }

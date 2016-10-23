@@ -20,6 +20,16 @@ namespace Vsite.CSharp.Testovi
                 output.Enqueue(number);
             }
 
+            public override void WriteLine(double number)
+            {
+                output.Enqueue(number);
+            }
+
+            public override void WriteLine(object obj)
+            {
+                output.Enqueue(obj);
+            }
+
             public string GetString()
             {
                 return (string)output.Dequeue();
@@ -28,6 +38,16 @@ namespace Vsite.CSharp.Testovi
             public int GetInt()
             {
                 return (int)output.Dequeue();
+            }
+
+            public double GetDouble()
+            {
+                return (double)output.Dequeue();
+            }
+
+            public object GetObject()
+            {
+                return output.Dequeue();
             }
 
             public bool IsEmpty

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp.ClassStruct;
+using Vsite.CSharp;
 
 namespace Vsite.CSharp.Testovi
 {
@@ -8,32 +8,23 @@ namespace Vsite.CSharp.Testovi
     public class TestClass_Struct : ConsoleTest
     {
         [TestMethod]
-        public void Test_ClassStruct()
+        public void ClassStruct_IspišiKlase()
         {
-            MojaKlasa mk1 = new MojaKlasa();
-            MojaKlasa mk2 = mk1;
-            mk1.IspišiČlan();
-            mk2.IspišiČlan();
+            ClassStruct.IspišiKlase();
             Assert.AreEqual(5, cw.GetInt());
             Assert.AreEqual(5, cw.GetInt());
 
-            mk2.broj = 2;
-            mk1.IspišiČlan();
-            mk2.IspišiČlan();
             Assert.AreEqual(2, cw.GetInt());
             Assert.AreEqual(2, cw.GetInt());
+        }
 
-
-            MojaStruktura ms1 = new MojaStruktura();
-            MojaStruktura ms2 = ms1;
-            ms1.IspišiČlan();
-            ms2.IspišiČlan();
+        [TestMethod]
+        public void ClassStruct_IspišiStrukture()
+        {
+            ClassStruct.IspišiStrukture();
             Assert.AreEqual("MojaStruktura", cw.GetString());
             Assert.AreEqual("MojaStruktura", cw.GetString());
 
-            ms2.tekst = "MyStruct";
-            ms1.IspišiČlan();
-            ms2.IspišiČlan();
             Assert.AreEqual("MojaStruktura", cw.GetString());
             Assert.AreEqual("MyStruct", cw.GetString());
         }
