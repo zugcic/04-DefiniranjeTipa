@@ -7,39 +7,61 @@ namespace Vsite.CSharp
         protected Bazna(int a) // konstruktor je protected!
         {
             A = a;
+            Console.WriteLine(string.Format("Bazna.Bazna({0})"), a);
         }
 
         public readonly int A;
     }
 
-    class Izvedena : Bazna
+    class Izvedena // : Bazna
     {
         public Izvedena()
-            : this(0, 0)
         {
-        }
-
-        public Izvedena(int a, int b)
-            : base(a)
-        {
-            B = b;
+            Console.WriteLine(string.Format("Izvedena.Izvedena()"));
         }
 
         public readonly int B;
     }
 
-    class Program
+    public class DelegiranjeKonstruktora
     {
+        public static void StvoriInstancuBazneKlase()
+        {
+            // TODO: Stvoriti instancu klase Bazna i ispisati vrijednost člana A.
+
+        }
+
+        public static void StvoriInstancuIzvedeneKlasePraznimKonstruktorom()
+        {
+            // TODO: Promijeniti klasu Izvedena tako da je izvedena iz klase Bazna. Provjeriti da li se kod prevodi te napraviti potrebne promjene u klasi Izvedena.
+            // TODO: Stvoriti instancu klase Izvedena pozivom podrazumijevanog konstruktora.
+
+            // TODO: Ispisati vrijednosti članova A i B stvorenog objekta.
+
+        }
+
+        public static void StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(int a, int b)
+        {
+            // TODO: U klasu Izvedena dodati konstruktor s dva argumenta ("a" i "b") tipa int, kojima će se inicijalizirati članovi A i B. 
+            // U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})"), a, b);
+
+            // TODO: Stvoriti objekt pozivom tog konstruktora i ispisati vrijednosti članova A i B stvorenog objekta.
+
+
+            // TODO: Promijeniti prazni konstruktor klase Izvedena tako da delegira poziv konstruktora s dva argumenta.
+
+        }
+
         static void Main(string[] args)
         {
-            // nije moguće stvoriti instancu klase jer je konstruktor zaštićen
-            //Bazna b = new Bazna(3);
+            StvoriInstancuBazneKlase();
 
-            Izvedena i1 = new Izvedena();
-            Console.WriteLine("A={0} B={1}", i1.A, i1.B);
+            StvoriInstancuIzvedeneKlasePraznimKonstruktorom();
 
-            Izvedena i2 = new Izvedena(2, 3);
-            Console.WriteLine("A={0} B={1}", i2.A, i2.B);
+            StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(5, 7);
+
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
         }
     }
 
