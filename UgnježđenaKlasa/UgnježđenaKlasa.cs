@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Vsite.CSharp
+{
+    public class UgnježđenaKlasa
+    {
+        static void Main(string[] args)
+        {
+            Gnijezdo g = new Gnijezdo();
+            g.IspišiMe();
+
+            IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
+            ig.PredstaviSe();
+
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
+        }
+
+        public static void IzravnoKorištenjeUgnježđeneKlase()
+        {
+            // TODO: Modificirati definicije tako da se klasa Ugnježđena može pozivati izravno:
+            //Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
+            //gu.PredstaviSeNeposredno();
+        }
+    }
+}

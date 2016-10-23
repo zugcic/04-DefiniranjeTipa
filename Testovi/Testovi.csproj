@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1013589-B28B-4373-9812-884849AD8034}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vsite.CSharp.Testovi</RootNamespace>
+    <AssemblyName>Testovi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ConsoleTest.cs" />
+    <Compile Include="TestClass-Struct.cs" />
+    <Compile Include="TestDefinicijeTipa.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestInternal.cs" />
+    <Compile Include="TestStatičkihČlanova.cs" />
+    <Compile Include="TestUgnježđena.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Class-Struct\Class-Struct.csproj">
+      <Project>{26eb8b18-c269-4a35-898b-06a52ae2e622}</Project>
+      <Name>Class-Struct</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DefinicijaTipa\DefinicijaTipa.csproj">
+      <Project>{b84c51a5-93ad-4623-bd47-0285efd6be7c}</Project>
+      <Name>DefinicijaTipa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DelegiranjeKonstruktora\DelegiranjeKonstruktora.csproj">
+      <Project>{4fc01a9f-93d2-4577-a355-e8b4ec16e088}</Project>
+      <Name>DelegiranjeKonstruktora</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Destruktor\Destruktor.csproj">
+      <Project>{6f9008f4-cd25-4d49-bb02-4b9a79cc2b9e}</Project>
+      <Name>Destruktor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GCCollect\GCCollect.csproj">
+      <Project>{30192e1f-7cf2-4af9-b32f-2d3eac320a74}</Project>
+      <Name>GCCollect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDisposable0\IDisposable0.csproj">
+      <Project>{a26e41af-3e24-4195-94ee-42a2cb711696}</Project>
+      <Name>IDisposable0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDisposable1\IDisposable1.csproj">
+      <Project>{198a10d8-9be4-4b4f-8c1e-71394c8d4b46}</Project>
+      <Name>IDisposable1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Internal1\Internal1.csproj">
+      <Project>{dcf1f9f5-874d-4a44-9161-655bca1f868b}</Project>
+      <Name>Internal1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Internal2\Internal2.csproj">
+      <Project>{b0605f69-9fa5-4e41-8fb0-d5db1a89b1f3}</Project>
+      <Name>Internal2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KonstruktorKlase\KonstruktorKlase.csproj">
+      <Project>{5d087245-f902-4310-b2a3-ccc2bc0ac926}</Project>
+      <Name>KonstruktorKlase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KonstruktorStrukture\KonstruktorStrukture.csproj">
+      <Project>{ddf65c91-962e-449d-8f91-b87bcf8d0814}</Project>
+      <Name>KonstruktorStrukture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualneMetodeKonstruktor\VirtualneMetodeKonstruktor.csproj">
+      <Project>{b8e24bed-c17b-4a81-8635-2a41b3c3d915}</Project>
+      <Name>VirtualneMetodeKonstruktor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualneMetode\VirtualneMetode.csproj">
+      <Project>{132886e2-3206-49dd-8c64-46a73fd636e0}</Project>
+      <Name>VirtualneMetode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,35 +1,36 @@
 ﻿using System;
 
-namespace Vsite.CSharp
+namespace Vsite.CSharp.DefinicijaTipa
 {
-    class MojaKlasa
+    public class MojaKlasa
     {
-        // TODO: Dodati jedna privatno polje (podatkovni član)
+        // TODO: Dodati privatno polje (podatkovni član) "broj" tipa int i dodijeliti mu vrijednost 5
 
 
-        // TODO: Dodati javnu metodu koja će ispisati podatkovni član
+        // TODO: Dodati javnu metodu IspišiČlan koja će ispisati podatkovni član
 
     }
 
 
-    struct MojaStruktura
+    public struct MojaStruktura
     {
-        // TODO: Dodati jedna privatno polje (podatkovni član)
+        // TODO: Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
 
 
-        // TODO: Dodati javnu metodu koja će ispisati podatkovni član
+        // TODO: Dodati javnu metodu IspišiČlan koja će ispisati podatkovni član
 
     }
 
 
-    class Program
+    class DefinicijaTipa
     {
         static void Main(string[] args)
         {
-            // TODO: Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu
+            // TODO: Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
 
-            // TODO: Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu
+            // TODO: Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan
 
+            Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
     }
