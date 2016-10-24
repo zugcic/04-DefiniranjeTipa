@@ -70,15 +70,8 @@ Treba primijetiti da resdoslijed uništavanja objekata nema izravne veze s
 redoslijedom njihova stvaranja.
 
 
-IDisposable0
+IDisposable
 ------------
 Klasa koja radi s datotekom zatvara datoteku u destruktoru. Budući da
 destruktor može biti pozvan i nakon završetka programa, pokušaj brisanja 
 datoteke u programu će baciti iznimku.
-
-
-IDsisposable1
--------------
-Klasa za rad s datotekom implementira IDisposable sučelje što omogućava da
-eksplicitno pozovemo Dispose metodu (ili koristimno blok using) prije
-brisanja datoteke.
