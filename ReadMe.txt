@@ -65,9 +65,7 @@ Primjer koji pokazuje kada se (ne) poziva destruktor, tj. finalizirajuća metoda
 
 GCCollect
 ---------
-U programu generiramo mnoštvo objekata. Ako je broj objekata jako velik,
-GC će sam početi uništavati objekte da osigura mjesto za nove.
-Iza petlje eksplicitno se poziva GC koji čisti sve nedohvatljive objekte.
+Primjer kako se pomoću GC.Collect može forsirati oslobađanje memorije.
 Treba primijetiti da resdoslijed uništavanja objekata nema izravne veze s
 redoslijedom njihova stvaranja.
 
