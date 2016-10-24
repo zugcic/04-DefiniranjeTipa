@@ -60,11 +60,7 @@ Primjer kako se iz konstruktora mogu pozivati virtualne metode.
 
 Destruktor
 ----------
-Definirana je klasa s "destruktorom" u kojem se ispisuje poruka u izlazni 
-prozor (Output) Visual Studija.
-Iako je instanca klase u programu definirana u zasebnom bloku, pri izlasku iz 
-bloka se destruktor ne poziva odmah. To čini naknadno tek GC, što se vidi 
-po poruci u izlaznom prozoru koja se ispisuje tek nakon što program završi.
+Primjer koji pokazuje kada se (ne) poziva destruktor, tj. finalizirajuća metoda.
 
 
 GCCollect

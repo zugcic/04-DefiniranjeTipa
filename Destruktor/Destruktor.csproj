@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="KlasaSDestruktorom.cs" />
     <Compile Include="Destruktor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
