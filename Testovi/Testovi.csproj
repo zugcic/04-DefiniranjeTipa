@@ -88,6 +88,10 @@
       <Project>{30192e1f-7cf2-4af9-b32f-2d3eac320a74}</Project>
       <Name>GCCollect</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IDisposable\IDisposable.csproj">
+      <Project>{a26e41af-3e24-4195-94ee-42a2cb711696}</Project>
+      <Name>IDisposable</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Internal1\Internal1.csproj">
       <Project>{dcf1f9f5-874d-4a44-9161-655bca1f868b}</Project>
       <Name>Internal1</Name>
