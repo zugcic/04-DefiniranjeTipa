@@ -4,70 +4,87 @@ namespace Vsite.CSharp
 {
     class Bazna
     {
-        public virtual void IspisiImeVirtualno()
-        {
-            Console.WriteLine("Bazna Virtualno");
-        }
-
-        public void IspisiImeObicno()
+        public void IspišiImeObično()
         {
             Console.WriteLine("Bazna Obično");
+        }
+
+        public virtual void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Bazna Virtualno");
         }
     }
 
     class Izvedena1 : Bazna
     {
-        public override void IspisiImeVirtualno()
-        {
-            Console.WriteLine("Izvedena1 Virtualno");
-        }
-
-        // ključnom riječi new ćemo spriječiti upozorenje da
-        // metoda IspisiImeObicno skriva istoimenu metodu bazne
-        // klase:
-        // public new void IspisiImeObicno() {
-        public new void IspisiImeObicno()
-        {
-            Console.WriteLine("Izvedena1 Obično");
-        }
     }
 
     class Izvedena2 : Bazna
     {
-        public override void IspisiImeVirtualno()
-        {
-            Console.WriteLine("Izvedena2 Virtualno");
-        }
-
-        public new void IspisiImeObicno()
-        {
-            Console.WriteLine("Izvedena2 Obično");
-        }
     }
 
-    class Program
+    public class VirtualneMetode
     {
+        public static void ZasebniPoziviNevirtualnihMetoda()
+        {
+            Bazna bazna = new Bazna();
+            bazna.IspišiImeObično();
+
+            Izvedena1 izvedena1 = new Izvedena1();
+            izvedena1.IspišiImeObično();
+
+            Izvedena2 izvedena2 = new Izvedena2();
+            izvedena2.IspišiImeObično();
+        }
+
+        public static void PoziviNevirtualnihMetodaNaKolekcijiBaznogTipa()
+        {
+            Bazna[] objekti = new Bazna[] { new Bazna(), new Izvedena1(), new Izvedena2() };
+            foreach (Bazna o in objekti)
+                o.IspišiImeObično();
+        }
+
+        public static void ZasebniPoziviVirtualnihMetoda()
+        {
+            Bazna bazna = new Bazna();
+            bazna.IspišiImeVirtualno();
+
+            Izvedena1 izvedena1 = new Izvedena1();
+            izvedena1.IspišiImeVirtualno();
+
+            Izvedena2 izvedena2 = new Izvedena2();
+            izvedena2.IspišiImeVirtualno();
+        }
+
+        public static void PoziviVirtualnihMetodaNaKolekcijiBaznogTipa()
+        {
+            Bazna[] objekti = new Bazna[] { new Bazna(), new Izvedena1(), new Izvedena2() };
+            foreach (Bazna o in objekti)
+                o.IspišiImeVirtualno();
+        }
+
+
         static void Main(string[] args)
         {
-            Bazna[] objekti = new Bazna[] { new Bazna(), new Izvedena2(), new Izvedena1() };
+            // TODO: Pokrenite program i provjerite što će se ispisati.
 
-            foreach (Bazna o in objekti)
-            {
-                o.IspisiImeVirtualno();
-            }
+            // TODO: U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". Pokrenite program i usporedite ispise s prijašnjima.
 
-            foreach (Bazna o in objekti)
-            {
-                o.IspisiImeObicno();
-            }
+            Console.WriteLine("Zasebni pozivi nevirtualnih metoda:");
+            ZasebniPoziviNevirtualnihMetoda();
 
-            Izvedena1 i1 = new Izvedena1();
-            i1.IspisiImeObicno();
+            Console.WriteLine("Pozivi nevirtualnih metoda na kolekciji baznih objekata:");
+            PoziviNevirtualnihMetodaNaKolekcijiBaznogTipa();
 
-            Bazna biz1 = (Bazna)i1;
-            biz1.IspisiImeObicno();
-            biz1.IspisiImeVirtualno();
+            // TODO: U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
 
+            Console.WriteLine("Zasebni pozivi virtualnih metoda:");
+            ZasebniPoziviVirtualnihMetoda();
+
+            Console.WriteLine("Pozivi virtualnih metoda na kolekciji baznih objekata:");
+            PoziviVirtualnihMetodaNaKolekcijiBaznogTipa();
+
+            Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
     }

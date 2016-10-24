@@ -50,11 +50,7 @@ poziva drugog ("delegiranja") konstruktora iste klase pomoću ključne riječi t
 
 VirtualneMetode
 ---------------
-Definirana je bazna klasa i iz nje dvije izvedene klase s virtualnim
-i nevirtualnim metodama. Kreira se niz objekata pripadajućih tipova i u 
-petlji se pozivaju metode. Za virtualne metode će biti uvijek pozvana
-metoda iz "najizvedenijeg" tipa! Za nevirtualne metode će uvijek biti
-pozvana metoda iz "pretvorenog" (tj. baznog) tipa.
+Primjer ponašanja virtualnih i nevirtualnih metoda u izvedenim klasama.
 
 
 VirtualneMetodeKonstruktor

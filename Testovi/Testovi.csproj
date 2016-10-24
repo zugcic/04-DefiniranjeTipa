@@ -63,6 +63,7 @@
     <Compile Include="TestKorištenjaObjekta.cs" />
     <Compile Include="TestStatičkihČlanova.cs" />
     <Compile Include="TestUgnježđena.cs" />
+    <Compile Include="TestVirtualnihMetoda.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Class-Struct\Class-Struct.csproj">
