@@ -120,10 +120,6 @@
       <Project>{8e658d16-d390-4b80-9b33-866bf0011ecb}</Project>
       <Name>UgnježđenaKlasa</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VirtualneMetodeKonstruktor\VirtualneMetodeKonstruktor.csproj">
-      <Project>{b8e24bed-c17b-4a81-8635-2a41b3c3d915}</Project>
-      <Name>VirtualneMetodeKonstruktor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\VirtualneMetode\VirtualneMetode.csproj">
       <Project>{132886e2-3206-49dd-8c64-46a73fd636e0}</Project>
       <Name>VirtualneMetode</Name>

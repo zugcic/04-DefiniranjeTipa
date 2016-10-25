@@ -53,9 +53,9 @@ VirtualneMetode
 Primjer ponašanja virtualnih i nevirtualnih metoda u izvedenim klasama.
 
 
-VirtualneMetodeKonstruktor
+CrtanjeLikova
 --------------------------
-Primjer kako se iz konstruktora mogu pozivati virtualne metode.
+Primjer čemu služe virtualne metode.
 
 
 Destruktor
