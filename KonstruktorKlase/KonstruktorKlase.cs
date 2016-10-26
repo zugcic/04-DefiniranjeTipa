@@ -34,7 +34,7 @@ namespace Vsite.CSharp
         {
             StvoriObjektPodrazumijevanimKonstruktorom();
 
-            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", new DateTime(1971, 27, 4));
+            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", new DateTime(1971, 7, 4));
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
