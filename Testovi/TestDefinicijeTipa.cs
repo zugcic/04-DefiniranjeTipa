@@ -15,7 +15,7 @@ namespace Vsite.CSharp.Testovi
         }
 
         [TestMethod]
-        public void DefinicijaTipa_MojaStrukturaIspišiČlanIspisuje5()
+        public void DefinicijaTipa_MojaStrukturaIspišiČlanIspisujeMojaStruktura()
         {
             DefinicijaTipa.IspišiČlanStrukture();
             Assert.AreEqual("MojaStruktura", cw.GetString());

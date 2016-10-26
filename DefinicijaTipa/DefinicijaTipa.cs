@@ -38,7 +38,7 @@ namespace Vsite.CSharp
 
         public static void IspišiČlanStrukture()
         {
-            // TODO: Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan
+            // TODO: Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
 
         }
 
