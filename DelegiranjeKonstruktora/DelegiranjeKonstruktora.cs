@@ -7,7 +7,7 @@ namespace Vsite.CSharp
         protected Bazna(int a) // konstruktor je protected!
         {
             A = a;
-            Console.WriteLine(string.Format("Bazna.Bazna({0})"), a);
+            Console.WriteLine(string.Format("Bazna.Bazna({0})", a));
         }
 
         public readonly int A;
@@ -43,7 +43,7 @@ namespace Vsite.CSharp
         public static void StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(int a, int b)
         {
             // TODO: U klasu Izvedena dodati konstruktor s dva argumenta ("a" i "b") tipa int, kojima će se inicijalizirati članovi A i B. 
-            // U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})"), a, b);
+            // U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})", a, b));
 
             // TODO: Stvoriti objekt pozivom tog konstruktora i ispisati vrijednosti članova A i B stvorenog objekta.
 
