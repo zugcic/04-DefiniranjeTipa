@@ -34,7 +34,7 @@ namespace Vsite.CSharp
 
         public static void IspišiIzvedenuIzInterneBazne()
         {
-            // TODO: U klasi IzvedenaIzInterneBazneLokalne treba na neki način omogućiti poziv metode IspišiMe iz klase InternaBaznaLokalna ali bez promjene koda klase InternaBaznaLokalna!
+            // TODO: U klasi IzvedenaIzInterneBazneLokalne treba na neki način omogućiti poziv metode IspišiMe iz klase InternaBazna ali bez promjene koda klase InternaBazna!
             IzvedenaIzInterneBazne izvedenaIzInterne = new IzvedenaIzInterneBazne();
             izvedenaIzInterne.IspišiMe();
         }
