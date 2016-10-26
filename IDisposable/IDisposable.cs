@@ -13,6 +13,8 @@ namespace Vsite.CSharp
 
             // TODO: Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
 
+            // TODO: Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
+
         }
 
         public static void BrisanjeDatoteke(string imeDatoteke)
