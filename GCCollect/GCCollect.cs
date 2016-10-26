@@ -6,6 +6,7 @@ namespace Vsite.CSharp
     class Program
     {
         // TODO: Prekopirati definiciju klase s destruktorom iz prethodnog primjera
+        // TODO: Staviti točku prekida (breakpoint) u destruktor, pokrenuti program i pogledati zadnje ispise prije prekida izvođenja.
         public class KlasaSDestruktorom
         {
 
