@@ -18,7 +18,7 @@ namespace Vsite.CSharp.Testovi
         [TestMethod]
         public void KonstruktorStrukture_TestPozivaKonstruktoraSDvaArgumenta()
         {
-            KonstruktorStrukture.PozivKonstruktoraSDvaArgumenta(3, JedinicaDuljine.Metar);
+            KonstruktorStrukture.PozivKonstruktoraSDvaArgumenta(3, JedinicaDuljine.Kilometar);
             Assert.AreEqual(3.0, cw.GetDouble());
             Assert.AreEqual(JedinicaDuljine.Kilometar, (JedinicaDuljine)cw.GetObject());
         }
