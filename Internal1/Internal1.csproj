@@ -53,12 +53,6 @@
     <Compile Include="BazneKlase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Internal2\Internal2.csproj">
-      <Project>{B0605F69-9FA5-4E41-8FB0-D5DB1A89B1F3}</Project>
-      <Name>Internal2</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

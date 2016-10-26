@@ -50,10 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BazneKlase.cs" />
     <Compile Include="Internal.cs" />
     <Compile Include="IzvedeneKlase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Internal1\Internal1.csproj">
+      <Project>{dcf1f9f5-874d-4a44-9161-655bca1f868b}</Project>
+      <Name>Internal1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
