@@ -27,6 +27,7 @@ namespace Vsite.CSharp
             // TODO: Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
 
 
+            Console.WriteLine();
             // TODO: Otkomentirati donju naredbu.
             //mk2.broj = 2;
             // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
@@ -36,11 +37,13 @@ namespace Vsite.CSharp
 
         public static void IspišiStrukture()
         {
+            // TODO: Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura"
             MojaStruktura ms1 = new MojaStruktura();
             MojaStruktura ms2 = ms1;
             // TODO: Pozvati metodu IspišiČlan za obje instance
 
 
+            Console.WriteLine();
             // TODO: Otkomentirati donju naredbu.
             //ms2.tekst = "MyStruct";
             // TODO: Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
@@ -51,6 +54,9 @@ namespace Vsite.CSharp
         static void Main(string[] args)
         {
             IspišiKlase();
+
+            Console.WriteLine();
+
             IspišiStrukture();
 
             Console.WriteLine("GOTOVO!!!");
