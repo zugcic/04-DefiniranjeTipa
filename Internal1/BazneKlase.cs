@@ -10,7 +10,7 @@ namespace Vsite.CSharp
         }
     }
 
-    class Bazna
+    public class Bazna  //ako ništa ne navedemo klasi je pravo pristupa internal znači da se može koristi unutar modula
     {
         public void IspišiMe()
         {
