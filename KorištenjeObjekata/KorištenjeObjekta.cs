@@ -13,7 +13,7 @@ namespace Vsite.CSharp
         // DateTime.Now -Vraća sistemskovrijeme
         public static void IspišiTrenutniDatumVrijeme()
         {
-            Console.WriteLine(DateTime.Now);
+            Console.WriteLine(DateTime.Now.ToString());
         }
 
         // TODO: Ispisati današnji datum pomoću statičkog svojstva DateTime.Now i metode DateTime.ToShortDateString
