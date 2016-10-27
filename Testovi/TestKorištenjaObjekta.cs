@@ -12,7 +12,9 @@ namespace Vsite.CSharp.Testovi
         {
             DateTime trenutnoVrijeme = DateTime.Now;
             KorištenjeObjekata.IspišiTrenutniDatumVrijeme();
-            DateTime ispisanoVrijeme = DateTime.Parse(cw.GetString());
+            object obj = cw.GetObject();
+            string ispisano = obj as string;
+            DateTime ispisanoVrijeme = ispisano != null ? DateTime.Parse(ispisano) : (DateTime)obj;
             Assert.IsTrue((trenutnoVrijeme - ispisanoVrijeme).Seconds <= 1);
         }
 
