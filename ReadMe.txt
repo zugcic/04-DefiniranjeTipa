@@ -48,9 +48,9 @@ Primjer poziva konstruktora bazne klase pomoću ključne riječi base i
 poziva drugog ("delegiranja") konstruktora iste klase pomoću ključne riječi this.
 
 
-VirtualneMetode
----------------
-Primjer ponašanja virtualnih i nevirtualnih metoda u izvedenim klasama.
+StatičkiKonstruktor
+-------------------
+Ilustracija kako se zadaju i kada se izvode statički konstruktori (konstruktori tipa).
 
 
 CrtanjeLikova

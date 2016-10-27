@@ -64,8 +64,8 @@
     <Compile Include="TestKonstruktorKlase.cs" />
     <Compile Include="TestKorištenjaObjekta.cs" />
     <Compile Include="TestStatičkihČlanova.cs" />
+    <Compile Include="TestStatičkogKonstruktora.cs" />
     <Compile Include="TestUgnježđena.cs" />
-    <Compile Include="TestVirtualnihMetoda.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Class-Struct\Class-Struct.csproj">
@@ -112,6 +112,10 @@
       <Project>{5c8e47fd-1a30-444d-bee1-71f01615e2b4}</Project>
       <Name>KorištenjeObjekata</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StatičkiKonstruktor\StatičkiKonstruktor.csproj">
+      <Project>{98929fdb-8782-4316-9393-86f7447fd68a}</Project>
+      <Name>StatičkiKonstruktor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StatičkiČlanovi\StatičkiČlanovi.csproj">
       <Project>{a216cae3-f6cf-4589-b4f9-5f895c0dc071}</Project>
       <Name>StatičkiČlanovi</Name>
@@ -119,10 +123,6 @@
     <ProjectReference Include="..\UgnježđenaKlasa\UgnježđenaKlasa.csproj">
       <Project>{8e658d16-d390-4b80-9b33-866bf0011ecb}</Project>
       <Name>UgnježđenaKlasa</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VirtualneMetode\VirtualneMetode.csproj">
-      <Project>{132886e2-3206-49dd-8c64-46a73fd636e0}</Project>
-      <Name>VirtualneMetode</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
