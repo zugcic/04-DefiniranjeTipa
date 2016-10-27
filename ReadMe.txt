@@ -53,11 +53,6 @@ StatičkiKonstruktor
 Ilustracija kako se zadaju i kada se izvode statički konstruktori (konstruktori tipa).
 
 
-CrtanjeLikova
---------------------------
-Primjer čemu služe virtualne metode.
-
-
 Destruktor
 ----------
 Primjer koji pokazuje kada se (ne) poziva destruktor, tj. finalizirajuća metoda.
