@@ -42,7 +42,7 @@ namespace Vsite.CSharp
 
         public static void IspišiČlanStrukture()
         {
-            MojaStruktura ms = new MojaStruktura("Moja struktura");
+            MojaStruktura ms = new MojaStruktura("MojaStruktura");
             ms.IspišiČlan();
             MojaStruktura ms2 = new MojaStruktura();
             ms2.IspišiČlan();
