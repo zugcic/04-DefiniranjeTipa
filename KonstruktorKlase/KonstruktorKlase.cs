@@ -42,7 +42,7 @@ namespace Vsite.CSharp
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
             // U klasi Osoba promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
-            Osoba osoba = new Osoba("Ivica","Kičmanović",DateTime.Now);
+            Osoba osoba = new Osoba(ime,prezime,datumRođenja);
             Console.WriteLine(osoba.Ime);
             Console.WriteLine(osoba.Prezime);
             Console.WriteLine(osoba.DatumRođenja);
