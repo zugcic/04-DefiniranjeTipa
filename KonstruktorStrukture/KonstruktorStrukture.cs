@@ -8,13 +8,27 @@ namespace Vsite.CSharp
         Centimetar,
         Decimetar,
         Metar,
-        Kilometar
+        Kilometar ,
+      
     }
 
     public struct Udaljenost
     {
         public double Broj;
         public JedinicaDuljine Jedinica;
+
+        public Udaljenost(double broj,JedinicaDuljine jedinica)
+        {
+            this.Broj = broj;
+            this.Jedinica = jedinica;
+        }
+
+        public Udaljenost(double broj)
+        {
+            this.Broj = broj;
+            this.Jedinica = JedinicaDuljine.Kilometar;
+        }
+
     }
 
 
@@ -22,27 +36,39 @@ namespace Vsite.CSharp
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {
-            // TODO: Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+            // Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+            Udaljenost u=new Udaljenost();
+            Console.WriteLine(u.Broj);
+            Console.WriteLine(u.Jedinica);
 
+
+            //  U definiciji strukture Udaljenost dodati prazan konstruktor koji će inicijalizirati članove na neku vrijednost.
+            //  Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
             
-            // TODO: U definiciji strukture Udaljenost dodati prazan konstruktor koji će inicijalizirati članove na neku vrijednost.
-            // TODO: Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
-
+            //Nije dozoljeno dodavati konstruktore bez argumenata
 
         }
 
         public static void PozivKonstruktoraSDvaArgumenta(double broj, JedinicaDuljine jedinica)
         {
-            // TODO: U strukturi Udaljenost promijeniti prazan konstruktor tako da prima dva argumenta ("broj" i "jedinica") kojima se inicijaliziraju članovi. 
-            // TODO: Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
+            //  U strukturi Udaljenost promijeniti prazan konstruktor tako da prima dva argumenta ("broj" i "jedinica") kojima se inicijaliziraju članovi. 
 
+
+            //  Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
+            Udaljenost u = new Udaljenost(broj,jedinica);
+            Console.WriteLine(u.Broj);
+            Console.WriteLine(u.Jedinica);
 
         }
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO: U definiciji strukture Udaljenost dodati konstruktor koji prima samo argument "broj", a član "Jedinica" će konstruktor postaviti na JedinicaDuljine.Metar.
-            // TODO: Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
+            // U definiciji strukture Udaljenost dodati konstruktor koji prima samo argument "broj", a član "Jedinica" će konstruktor postaviti na JedinicaDuljine.Metar.
+            // Stvoriti objekt pozivom tog konstruktora te ispisati vrijednosti članova.
+            Udaljenost u = new Udaljenost(broj);
+            Console.WriteLine(u.Broj);
+            Console.WriteLine(u.Jedinica);
+
 
 
         }
