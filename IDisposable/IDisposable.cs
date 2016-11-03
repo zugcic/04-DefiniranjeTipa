@@ -7,14 +7,14 @@ namespace Vsite.CSharp
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            StreamWriter sw = new StreamWriter(imeDatoteke);
+            StreamWriter sw = new StreamWriter(imeDatoteke);   //otvara datoteku pod nekim imenom
             sw.WriteLine("Ovo je moj upis");
-            // TODO: Pokrenuti program i pogledati ispis.
+            //  Pokrenuti program i pogledati ispis.
 
-            // TODO: Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
-
-            // TODO: Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
-
+            //  Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
+            //sw.Dispose();//kada je pozovemo zatvaramo datoteku i oslobađmo memoriju
+            //  Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
+            sw.Close(); //svaki puta kad želimo osloboditi resurse kosristimo dispose metodu
         }
 
         public static void BrisanjeDatoteke(string imeDatoteke)
