@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-
+ //sve strukture i klase nasljeđuju System Object objekt
 namespace Vsite.CSharp
 {
     public class KlasaSDestruktorom
@@ -15,8 +15,11 @@ namespace Vsite.CSharp
             Debug.WriteLine(poruka);
         }
 
-        // TODO: Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}."
-
+        // Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}."
+        ~KlasaSDestruktorom() {
+            Console.WriteLine($"Destruktor objekta br. {RedniBroj}.");
+            Debug.WriteLine($"Destruktor objekta br. {RedniBroj}.");
+        }
 
         public readonly int RedniBroj; // redni broj objekta
 
@@ -33,6 +36,12 @@ namespace Vsite.CSharp
             }
 
             // TODO: Dodati for petlju koja će se ponoviti 100000 puta i unutar koje će se kreirati novi objekti tipa KlasaSDestruktorom. Pokrenuti program i provjeriti redni broj prvog uništenog objekta.
+            for (int i = 0; i < 100000; ++i){
+                new KlasaSDestruktorom(); //unutar petlje stvaramo 100000 objekata
+
+                //garbage collector nasumično odabire objekte koje briše
+
+            }
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
